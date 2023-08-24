@@ -50,8 +50,8 @@ function generatePossibleRearrangements(correctRearrangement, variableList) {
         }
     }
 
-    // Add the correct rearrangement as the fifth option
-    possibleRearrangements.push(correctRearrangement);
+    // // Add the correct rearrangement as the fifth option
+    // possibleRearrangements.push(correctRearrangement);
 
     // Wrap each rearrangement in MathJax tags
     possibleRearrangements.forEach((rearrangement, index) => {
