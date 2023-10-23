@@ -1,0 +1,8 @@
+{
+    "name" : "RandomEquations",
+    "version": "1.0.0",
+    "author": "Tobias Slade-Harajda (http://tobiassh0.github.io)",
+    "dependencies": {
+        "mathjs" : "^1.0.0"
+    }
+}

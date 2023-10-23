@@ -6,19 +6,8 @@ function shuffleArray(array) {
 }
 
 function rearrangeEquation(equation) {
-    const terms = equation.split(" + ");
-    const xTerm = terms.find(term => term.includes("x")); // Find a term containing 'x'
-
-    if (!xTerm) {
-        return equation; // If no term contains 'x', return the original equation
-    }
-
-    // Separate the coefficient and the variable in the xTerm
-    const xCoefficient = parseInt(xTerm.match(/[+-]?\d+/)[0]);
-    const remainingTerms = terms.filter(term => term !== xTerm).join(" + ");
-
-    // Rearrange the equation following algebraic rules
-    const rearrangedEquation = `x = (${remainingTerms}) / ${xCoefficient}`;
+    // Rearrange equation and simplify in terms of x
+    const rearrangedEquation = math.simplify(equation)
     return rearrangedEquation;
 }
 
